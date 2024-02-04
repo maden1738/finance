@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <!-- <P>A share of {{quotes.name}} costs {{quotes.price | usd}}</P>
+    -->
+    <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Symbol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>{{ quotes.symbol }}</td>
+        <td>{{ quotes.price | usd }}</td>
+        <td>{{ quotes.symbol }}</td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock %}
